@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sensação no Pote</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Courgette&display=swap">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container header-content">
+            <div class="logo">
+                <img src="../Logo/Gemini_Generated_Image_w9xposw9xposw9xp.png" alt="Sensação no Pote Logo">
+                <span>Sensação no Pote!</span>
+            </div>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#bolos">Bolos</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="inicio">
+        <section class="carousel-hero-section">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../Logo/Gemini_Generated_Image_tvxdnftvxdnftvxd.png" class="d-block w-100" alt="Bolo pote grande 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Logo/tamanho2.png" class="d-block w-100" alt="Bolo pote grande 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Logo/Gemini_Generated_Image_l2ithxl2ithxl2it.png" class="d-block w-100" alt="Bolo pote grande 3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <div class="hero-overlay-text">
+                <div class="container">
+                    <h1>BOLOS</h1>
+                    <p>Deliciosamente recheados e com muito sabor, cada um de nossos bolos é criado para proporcionar mais amor e carinho para todas as ocasiões.</p>
+                </div>
+            </div>
+        </section>
+
+          
+
+        <section class="category-selection">
+            <div class="container">
+                <div class="category-buttons">
+                    <button class="category-btn active" data-category="todos">Todos os Bolos</button>
+                    <button class="category-btn" data-category="chocolate">Bolo de Chocolate</button>
+                    <button class="category-btn" data-category="frutas">Bolo de Frutas</button>
+                    <button class="category-btn" data-category="chocobranco">Bolo de Choc/Branco</button>
+                </div>
+            </div>
+        </section>
+
+
+                <section class="product-grid" id="bolos">
+    <div class="container">
+        <h2 class="menu-title">Nosso Cardápio!</h2>
+        <div class="product-items" id="product-list"></div>
+    </div>
+    </section>
+        
+
+       
+    </main>
+
+
+       <section id="sobre" class="sobre-section">
+  <div class="container sobre-container">
+    <div class="sobre-imagem">
+      <img src="Logo/Gemini_Generated_Image_i7ah55i7ah55i7ah.png" alt="Imagem Sobre">
+    </div>
+    <div class="sobre-texto">
+      <h2>Sobre Nós</h2>
+      <p>Desde 2010, transformamos amor e sabor em cada receita. Somos apaixonados por bolos e, com o tempo, nos especializamos nos irresistíveis bolos de pote — preparados com ingredientes selecionados, muito carinho e aquele toque caseiro que conquista. Aqui, você encontra os melhores bolos de pote, perfeitos para qualquer momento!</p>
+    </div>
+  </div>
+</section>
+
+   <footer class="footer-section" id="contato">
+    <div class="container">
+        <div class="footer-title-logo">
+        <img src="Logo/Gemini_Generated_Image_w9xposw9xposw9xp.png" alt="logo redonda">
+        <h2>Fale com a gente!</h2>
+    </div>
+        <form id="contato-form" onsubmit="enviarWhats(event)">
+            <div class="form-group">
+                <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+            </div>
+            <div class="form-group">
+                <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva sua mensagem" required></textarea>
+            </div>
+            <button type="submit" class="enviar-btn"> Enviar no WhatsApp <img src="Logo/Dtafalonso-Android-L-WhatsApp.32.png" alt="WhatsApp"></button>
+        </form>
+
+        <section class="contatos-faixa">
+    <div class="contatos-container">
+        <div class="contato-item">
+            <img src="Logo/Martz90-Circle-Instagram.32.png" alt="Instagram">
+            <span>@SensacaoNoPote</span>
+        </div>
+        <div class="contato-item">
+            <img src="Logo/Martz90-Circle-Phone.32.png" alt="Telefone">
+            <span>(14) 3815-4139</span>
+        </div>
+    </div>
+</section>
+
+</footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
